@@ -28,6 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "Gallery Guide helps you to find museums and art galleries in the Helsinki area. Registered users can also save their favorite places, so that they can find them easily again!",
+    "githubUrl": "https://github.com/miimss/GalleryGuide/"
   }
 }
