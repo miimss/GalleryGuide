@@ -13,11 +13,11 @@ Gallery Guide was created as a part of Mobile Programming course at Haaga-Helia 
 
 
 <p>
-  <img src="assets/Login.png" alt="login screen" width="180"/>
-  <img src="assets/Map.png" alt="map screen" width="180"/>
-  <img src="assets/Favorites.png" alt="favorites screen" width="180"/>
-  <img src="assets/List.png" alt="list screen" width="180"/>
-  <img src="assets/Place.png" alt="place screen" width="180"/>
+  <img src="assets/Login.png" alt="login screen" width="200"/>
+  <img src="assets/Map.png" alt="map screen" width="200"/>
+  <img src="assets/Favorites.png" alt="favorites screen" width="200"/>
+  <img src="assets/List.png" alt="list screen" width="200"/>
+  <img src="assets/Place.png" alt="place screen" width="200"/>
 </p>
 
 ## Technologies and libraries
