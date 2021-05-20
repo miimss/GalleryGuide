@@ -1,6 +1,6 @@
 import { firebaseAuth } from '../config/Firebase';
 import React from 'react';
-import { Header, Icon } from 'react-native-elements';
+import { Header } from 'react-native-elements';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function HeaderComponent({ navigation }) {

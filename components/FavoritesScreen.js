@@ -4,15 +4,17 @@ import { StyleSheet, Text, ScrollView, View, Alert } from 'react-native';
 import HeaderComponent from './HeaderComponent';
 import { ListItem, Icon } from 'react-native-elements';
 import firebaseApp, { firebaseAuth } from '../config/Firebase';
+import { useIsFocused } from "@react-navigation/native";
 
 
 export default function FavoritesScreen({ navigation }) {
   const [favorites, setFavorites] = useState([]);
+  const isFocused = useIsFocused();
   const currentUser = firebaseAuth.currentUser ? firebaseAuth.currentUser : null;
 
   useEffect(() => {
     showFavorites();
-  }, []);
+  }, [isFocused]);
 
   const showFavorites = async () => {
     getFavorites()

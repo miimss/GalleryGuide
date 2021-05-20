@@ -4,16 +4,18 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Linking, Alert } 
 import firebaseApp, { firebaseAuth } from '../config/Firebase';
 import HeaderComponent from './HeaderComponent';
 import MapView, { Marker } from 'react-native-maps';
+import { useIsFocused } from "@react-navigation/native";
 
 export default function PlaceScreen({ navigation, route }) {
   const place = route.params;
+  const isFocused = useIsFocused();
   const user = firebaseAuth.currentUser.uid ? firebaseAuth.currentUser.uid : null;
   const favoritesRef = `users/${user}/favorites/`;
   const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
     isFavorite();
-  }, []);
+  }, [isFocused]);
 
   // Get user's favorites from database
   const getFavorites = async () => {
